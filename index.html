@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/thirdParties/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/thirdParties/slick/slick.css" />
+    <title>Resto</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-expand-lg p-0">
+        <div class="container-fluid p-0">
+            <ul class="navbar-nav align-items-center gap-30-px">
+                <li class="nav-item position-relative h-100">
+                    <a class="nav-link p-0" aria-current="page" href="#">Home</a>
+                    <div class="nav-active position-absolute bottom-0 w-100" />
+                </li>
+                <li class="nav-item position-relative h-100 dropdown">
+                    <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
+                    <ul class="dropdown-menu mt-2 border-0" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Fast Food</a></li>
+                        <li><a class="dropdown-item" href="#">Pubs and Bar</a></li>
+                        <li><a class="dropdown-item" href="#">Cafe</a></li>
+                    </ul>
+                    <div class="nav-active position-absolute bottom-0 w-100 d-none" />
+                </li>
+                <li class="nav-item position-relative h-100">
+                    <a class="nav-link p-0" href="#">Services</a>
+                    <div class="nav-active position-absolute bottom-0 w-100 d-none" />
+                </li>
+                <li class="nav-item position-relative h-100">
+                    <a class="nav-link p-0" href="#">About Us</a>
+                    <div class="nav-active position-absolute bottom-0 w-100 d-none" />
+                </li>
+            </ul>
+            <a class="d-flex align-items-center gap-8-px navbar-brand p-0" href="#">
+                <img src="./assets/icons/home.svg" alt="home-icon" />
+                <span> Resto</span>
+            </a>
+            <div class="d-flex gap-20-px">
+                <div class="navbar-search-wrapper">
+                    <img src="./assets/icons/search.svg" alt="search-icon">
+                    <input class="form-control me-2 no-border navbar-search-form" type="search"
+                        placeholder="Search your favorite food" aria-label="Search" />
+                </div>
+                <a class="btn btn-resto-primary" href="#"><span>Log In</span></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ads section -->
+    <section class="section-container ads" id="ads">
+        <div class="ads-description-container">
+            <div class="d-flex flex-column bg-white ads-description">
+                <div class="ads-description__text-wrapper">
+                    <div class="ads-description__rating">
+                        <div class="ads-description__rating-star">
+                            <script>
+                                for (let i = 0; i < 5; i++) {
+                                    document.write('<img src="./assets/icons/star.svg" alt="star-icon">')
+                                }
+                            </script>
+                        </div>
+                        <div class="ads-description__rating-info">
+                            <span class="ads-description__rating-average">5.0</span>
+                            <span class="ads-description__rating-count">(5.2K+)</span>
+                        </div>
+                    </div>
+                    <span class="ads-description__title">Padang Restaurant</span>
+                    <span class="ads-description__price">IDR 49.999 - IDR 560.000</span>
+                    <div class="ads-description__location">
+                        <img src="./assets/icons/location.svg" alt="location-icon">
+                        <span>Padang, Indonesia</span>
+                    </div>
+                </div>
+                <div class="ads-description__cta-wrapper">
+                    <button class="btn btn-resto-secondary d-flex ads-description__cta" type="button"> Make Reservation
+                        <img src="./assets/icons/chevron-right.svg" alt="chevron-right-icon">
+                    </button>
+                    <div class="ads-description__info">
+                        <img src="./assets/icons/info-square.svg" alt="info-square-icon">
+                        <span>No extra cost</span>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column bg-white ads-description">
+                <div class="ads-description__text-wrapper">
+                    <div class="ads-description__rating">
+                        <div class="ads-description__rating-star">
+                            <script>
+                                for (let i = 0; i < 5; i++) {
+                                    document.write('<img src="./assets/icons/star.svg" alt="star-icon">')
+                                }
+                            </script>
+                        </div>
+                        <div class="ads-description__rating-info">
+                            <span class="ads-description__rating-average">5.0</span>
+                            <span class="ads-description__rating-count">(4.8K+)</span>
+                        </div>
+                    </div>
+                    <span class="ads-description__title">Catappa Restaurant</span>
+                    <span class="ads-description__price">IDR 64.999 - IDR 340.000</span>
+                    <div class="ads-description__location">
+                        <img src="./assets/icons/location.svg" alt="location-icon">
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </div>
+                <div class="ads-description__cta-wrapper">
+                    <button class="btn btn-resto-secondary d-flex ads-description__cta" type="button"> Make Reservation
+                        <img src="./assets/icons/chevron-right.svg" alt="chevron-right-icon">
+                    </button>
+                    <div class="ads-description__info">
+                        <img src="./assets/icons/info-square.svg" alt="info-square-icon">
+                        <span>No extra cost</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ads-sliders">
+            <div class="ads-slider__item">
+                <img src="./assets/images/hero-1.png" alt="ads-1">
+            </div>
+            <div class="ads-slider__item">
+                <img src="./assets/images/hero-2.png" alt="ads-1">
+            </div>
+        </div>
+    </section>
+    <!-- why-us section -->
+    <section class="section-container" id="why-us">
+        <div class="d-flex flex-column gap-6-px align-items-center">
+            <span class="section-subtitle">Special Benefit For You</span>
+            <span class="section-title">Why Should Choose Us?</span>
+        </div>
+        <div class="d-flex justify-content-between gap-20-px whyus-advantages-container">
+            <div class="card align-items-center text-center whyus-advantage-item">
+                <div class="icon-circle-wrapper whyus-advantage-icon">
+                    <img src="./assets/icons/discount.svg" alt="discount-icon" />
+                </div>
+                <span class="whyus-advantage-title">Extra Discounts</span>
+                <span class="whyus-advantage-desc">Get your special discount by using our reservation</span>
+                <button class="btn whyus-advantage-btn" type="button"> View Details <img
+                        src="./assets/icons/chevron-right.svg" alt="chevron-right-icon" />
+                </button>
+            </div>
+            <div class="card align-items-center text-center whyus-advantage-item">
+                <div class="icon-circle-wrapper whyus-advantage-icon">
+                    <img src="./assets/icons/eat.svg" alt="discount-icon" />
+                </div>
+                <span class="whyus-advantage-title">Come and Eat</span>
+                <p class="fw-normal whyus-advantage-desc">Get your own table quickly & without waiting in line</p>
+                <button class="btn whyus-advantage-btn" type="button"> View Details <img
+                        src="./assets/icons/chevron-right.svg" alt="chevron-right-icon" />
+                </button>
+            </div>
+            <div class="card align-items-center text-center whyus-advantage-item">
+                <div class="icon-circle-wrapper whyus-advantage-icon">
+                    <img src="./assets/icons/fee.svg" alt="discount-icon" />
+                </div>
+                <span class="whyus-advantage-title">No Extra Fee</span>
+                <p class="fw-normal whyus-advantage-desc">Get tax free if you want to order food and make a reservation
+                </p>
+                <button class="btn whyus-advantage-btn" type="button"> View Details <img
+                        src="./assets/icons/chevron-right.svg" alt="chevron-right-icon" />
+                </button>
+            </div>
+            <div class="card align-items-center text-center whyus-advantage-item">
+                <div class="fw-normal icon-circle-wrapper whyus-advantage-icon">
+                    <img src="./assets/icons/clean.svg" alt="discount-icon" />
+                </div>
+                <span class="whyus-advantage-title">Guaranteed Cleanliness</span>
+                <p class="fw-normal whyus-advantage-desc">We ensure the cleanliness of the place as well as the food</p>
+                <button class="btn whyus-advantage-btn" type="button"> View Details <img
+                        src="./assets/icons/chevron-right.svg" alt="chevron-right-icon" />
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- most popular section -->
+    <section class="section-container" id="most-popular">
+        <div class="d-flex align-items-center justify-content-between popular-container">
+            <div class="popular-text-wrapper">
+                <div class="d-flex flex-column gap-6-px">
+                    <span class="section-subtitle">Top 3 Featured Restaurant</span>
+                    <span class="section-title">Most Popular Restaurants</span>
+                </div>
+                <p class="fw-normal popular-text-desc"> The best restaurant in our opinion is how much customers like it
+                    in terms of place, price, comfort and of course the taste of the food itself. </p>
+                <button class="btn btn-resto-secondary" type="button"> View All Restaurant <img
+                        src="./assets/icons/chevron-right.svg" alt="chevron-right-icon" />
+                </button>
+            </div>
+            <div class="d-flex popular-items-wrapper">
+                <div class="d-flex flex-column justify-content-end popular-item-1 popular-item-active"
+                    onclick="popular(1)">
+                    <div
+                        class="card d-flex flex-row justify-content-between align-items-center item-info-wrapper popular-item-info">
+                        <div class="d-flex flex-column item-info">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-star">
+                                    <img src="./assets/icons/star.svg" alt="star-icon" />
+                                </div>
+                                <div class="d-flex rating-info">
+                                    <span class="fw-semibold rating-average">5.0</span>
+                                    <span class="rating-count">(7.6K+)</span>
+                                </div>
+                            </div>
+                            <span class="fw-semibold item-info-title">Bind Balorant</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Jakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="item-btn">
+                            <button class="btn btn-resto-secondary" type="button">
+                                <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-end popular-item-2" onclick="popular(2)">
+                    <div class="card d-flex flex-row align-items-center item-info-wrapper popular-item-info d-none">
+                        <div class="d-flex flex-column item-info">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-star">
+                                    <img src="./assets/icons/star.svg" alt="star-icon" />
+                                </div>
+                                <div class="d-flex rating-info">
+                                    <span class="fw-semibold rating-average">5.0</span>
+                                    <span class="rating-count">(6.1K+)</span>
+                                </div>
+                            </div>
+                            <span class="fw-semibold item-info-title">Pago Restaurant</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Bandung, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="item-btn">
+                            <button class="btn btn-resto-secondary" type="button">
+                                <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-end popular-item-3" onclick="popular(3)">
+                    <div class="card d-flex flex-row align-items-center item-info-wrapper popular-item-info d-none">
+                        <div class="d-flex flex-column item-info">
+                            <div class="d-flex align-items-center">
+                                <div class="rating-star">
+                                    <img src="./assets/icons/star.svg" alt="star-icon" />
+                                </div>
+                                <div class="d-flex rating-info">
+                                    <span class="fw-semibold rating-average">5.0</span>
+                                    <span class="rating-count">(5.2K+)</span>
+                                </div>
+                            </div>
+                            <span class="fw-semibold item-info-title">Vanilla Longue</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Yogyakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="item-btn">
+                            <button class="btn btn-resto-secondary" type="button">
+                                <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- restauran based by location section -->
+    <section class="section-container" id="restourant-location">
+        <div class="d-flex justify-content-between near-title-container">
+            <div class="d-flex flex-column gap-6-px">
+                <span class="section-subtitle">Restaurant Based by City</span>
+                <span class="section-title">Restaurant Near You</span>
+            </div>
+            <div class="dropdown near-location-dropdown">
+                <button
+                    class="d-flex align-items-center btn btn-resto-info dropdown-toggle near-location-dropdown__toggle"
+                    type="button" id="nearLocationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-flex gap-6-px">
+                        <img src="./assets/icons/location.svg" alt="location-icon">
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                </button>
+                <ul class="dropdown-menu near-location-dropdown__menu" aria-labelledby="nearLocationDropdown">
+                    <li>
+                        <button class="btn btn-resto-info d-flex gap-6-px">
+                            <img src="./assets/icons/location.svg" alt="location-icon">
+                            <span>Bandung, Indonesia</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-resto-info d-flex gap-6-px">
+                            <img src="./assets/icons/location.svg" alt="location-icon">
+                            <span>Padang, Indonesia</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-resto-info d-flex gap-6-px">
+                            <img src="./assets/icons/location.svg" alt="location-icon">
+                            <span>Bekasi, Indonesia</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex gap-20-px w-100 near-content-container">
+            <div class="d-flex flex-column justify-content-end near-content-item near-content-item-1">
+                <div class="card d-flex flex-row justify-content-between align-items-center">
+                    <div class="d-flex flex-column item-info">
+                        <div class="d-flex align-items-center">
+                            <div class="rating-star">
+                                <img src="./assets/icons/star.svg" alt="star-icon" />
+                            </div>
+                            <div class="d-flex rating-info">
+                                <span class="fw-semibold rating-average">5.0</span>
+                                <span class="rating-count">(6.6K+)</span>
+                            </div>
+                        </div>
+                        <span class="fw-semibold item-info-title">Batavia Restaurant</span>
+                        <div class="d-flex item-info-prices">
+                            <span>IDR 29.000 - IDR 256.000</span>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <button class="btn btn-resto-secondary" type="button">
+                            <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-end near-content-item near-content-item-2">
+                <div class="card d-flex flex-row justify-content-between align-items-center">
+                    <div class="d-flex flex-column item-info">
+                        <div class="d-flex align-items-center">
+                            <div class="rating-star">
+                                <img src="./assets/icons/star.svg" alt="star-icon" />
+                            </div>
+                            <div class="d-flex rating-info">
+                                <span class="fw-semibold rating-average">5.0</span>
+                                <span class="rating-count">(3.6K+)</span>
+                            </div>
+                        </div>
+                        <span class="fw-semibold item-info-title">Split Ascent Restaurant</span>
+                        <div class="d-flex item-info-prices">
+                            <span>IDR 49.999 - IDR 560.000</span>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <button class="btn btn-resto-secondary" type="button">
+                            <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-end near-content-item near-content-item-3">
+                <div class="card d-flex flex-row justify-content-between align-items-center">
+                    <div class="d-flex flex-column item-info">
+                        <div class="d-flex align-items-center">
+                            <div class="rating-star">
+                                <img src="./assets/icons/star.svg" alt="star-icon" />
+                            </div>
+                            <div class="d-flex rating-info">
+                                <span class="fw-semibold rating-average">5.0</span>
+                                <span class="rating-count">(11K+)</span>
+                            </div>
+                        </div>
+                        <span class="fw-semibold item-info-title">Daza Fracture Restaurant</span>
+                        <div class="d-flex item-info-prices">
+                            <span>IDR 29.999 - IDR 560.000</span>
+                        </div>
+                    </div>
+                    <div class="item-btn">
+                        <button class="btn btn-resto-secondary" type="button">
+                            <img src="./assets/icons/arrow-right.svg" alt="arrow-right-icon">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-resto-secondary"> View All Restaurant <img src="./assets/icons/chevron-right.svg"
+                    alt="chevron-right-icon" />
+            </button>
+        </div>
+    </section>
+    <!-- expert chef -->
+    <section class="section-container" id="expert-chef">
+        <div class="d-flex flex-row chef-container">
+            <div class="chef-picture-container">
+                <div class="d-flex flex-column align-items-center text-center chef-experience">
+                    <div class="icon-circle-wrapper">
+                        <img src="./assets/icons/shield-check.svg" alt="shield-check-icon">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <span class="fw-semibold item-info-title">12 Years</span>
+                        <span class="text-grey item-info-subtitle">Experience</span>
+                    </div>
+                </div>
+                <div class="card d-flex flex-row justify-content-between align-items-center chef-card-info">
+                    <img class="chef-card-restaurant__img" src="./assets/images/chef-at-restaurant-1.jpg"
+                        alt="chef-at-restaurant-1">
+                    <div class="d-flex flex-column chef-card-restaurant__info">
+                        <div class="d-flex flex-column">
+                            <span class="text-grey item-info-subtitle">Chef at Restaurant:</span>
+                            <span class="fw-semibold item-info-title">Pearl Dolphin</span>
+                        </div>
+                        <a href="#" class="d-flex chef-card-restaurant__detail">
+                            <span class="fw-semibold text-yellow">View Detail</span>
+                            <img src="./assets/icons/chevron-right-yellow.svg" alt="cheron-right-icon" />
+                        </a>
+                    </div>
+                </div>
+                <img class="chef-picture" src="./assets/images/chef-1.jpg" alt="chef-1">
+            </div>
+            <div class="w-100 chef-list-container">
+                <div class="d-flex flex-column gap-6-px chef-title">
+                    <span class="section-subtitle">Top 4 Expert Chefs</span>
+                    <span class="section-title">Expert Chefs In Fuddy</span>
+                </div>
+                <div class="d-flex flex-column gap-20-px chef-list">
+                    <div class="card d-flex flex-row justify-content-between align-items-center chef-list-card chef-list-card__active"
+                        onclick="chefList(0)">
+                        <div class="d-flex flex-column item-info">
+                            <span class="fw-medium text-grey item-info-subtitle">PIZZA</span>
+                            <span class="fw-semibold item-info-title">Phoenix Satcheup</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Jakarta, Indonesia</span>
+                            </div>
+                        </div>
+                        <a href="#" class="d-flex chef-card-restaurant__detail">
+                            <span class="fw-medium text-yellow">Profile Detail</span>
+                            <img src="./assets/icons/chevron-right-yellow.svg" alt="cheron-right-icon" />
+                        </a>
+                    </div>
+                    <div class="card d-flex flex-row justify-content-between align-items-center chef-list-card"
+                        onclick="chefList(1)">
+                        <div class="d-flex flex-column item-info">
+                            <span class="fw-medium text-grey item-info-subtitle">VEGAN</span>
+                            <span class="fw-semibold item-info-title">Chamber Botfrag</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Bandung, Indonesia</span>
+                            </div>
+                        </div>
+                        <a href="#" class="d-flex chef-card-restaurant__detail d-none">
+                            <span class="fw-medium text-yellow">Profile Detail</span>
+                            <img src="./assets/icons/chevron-right-yellow.svg" alt="cheron-right-icon" />
+                        </a>
+                    </div>
+                    <div class="card d-flex flex-row justify-content-between align-items-center chef-list-card"
+                        onclick="chefList(2)">
+                        <div class="d-flex flex-column item-info">
+                            <span class="fw-medium text-grey item-info-subtitle">ROAST CHICKEN</span>
+                            <span class="fw-semibold item-info-title">Asep Vandal</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Sunda, Indonesia</span>
+                            </div>
+                        </div>
+                        <a href="#" class="d-flex chef-card-restaurant__detail d-none">
+                            <span class="fw-medium text-yellow">Profile Detail</span>
+                            <img src="./assets/icons/chevron-right-yellow.svg" alt="cheron-right-icon" />
+                        </a>
+                    </div>
+                    <div class="card d-flex flex-row justify-content-between align-items-center chef-list-card"
+                        onclick="chefList(3)">
+                        <div class="d-flex flex-column item-info">
+                            <span class="fw-medium text-grey item-info-subtitle">BEEF STEAK</span>
+                            <span class="fw-semibold item-info-title">I Made Invoker</span>
+                            <div class="d-flex item-info-location">
+                                <img src="./assets/icons/location.svg" alt="location-icon">
+                                <span>Bali, Indonesia</span>
+                            </div>
+                        </div>
+                        <a href="#" class="d-flex chef-card-restaurant__detail d-none">
+                            <span class="fw-medium text-yellow">Profile Detail</span>
+                            <img src="./assets/icons/chevron-right-yellow.svg" alt="cheron-right-icon" />
+                        </a>
+                    </div>
+                </div>
+                <div class="chef-view-all">
+                    <button class="btn bg-yellow"> View All Chef <img src="./assets/icons/chevron-right.svg"
+                            alt="chevron-right-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/thirdParties/slick/slick.min.js"></script>
+<script src="./assets/thirdParties/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/style.js"></script>
+
+</html>

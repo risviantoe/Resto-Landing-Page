@@ -1,0 +1,20 @@
+/* fonts */
+@font-face {
+	font-family: Poppins;
+	src: url(../fonts/Poppins.ttf);
+}
+
+@font-face {
+	font-family: Poppins-500;
+	src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+	font-family: Nunito;
+	src: url(../fonts/Nunito.ttf);
+}
+
+@font-face {
+	font-family: Nunito-800;
+	src: url(../fonts/Nunito-ExtraBold.ttf);
+}
